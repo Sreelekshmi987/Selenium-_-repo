@@ -21,6 +21,48 @@ public void locatingbyClass()
 	WebElement elementname3=driver.findElement(By.className("form-control"));
 	WebElement elementname4=driver.findElement(By.className("w25 fleft"));
 }
+public void locatingbyName()
+{
+    WebElement name=driver.findElement(By.name("description"));
+    WebElement name1=driver.findElement(By.name("student-gender"));
+    WebElement name2=driver.findElement(By.name("viewport"));
+    WebElement name3=driver.findElement(By.name("keywords"));
+    WebElement name4=driver.findElement(By.name("author"));
+}
+public void locatingbyLinkText()
+{
+    WebElement text=driver.findElement(By.linkText("check-box-demo.php"));
+    WebElement text1=driver.findElement(By.linkText("radio-button-demo.php"));
+    WebElement text2=driver.findElement(By.linkText("select-input.php"));
+    WebElement text3=driver.findElement(By.linkText("form-submit.php"));
+    WebElement text4=driver.findElement(By.linkText("ajax-form-submit.php"));
+}
+public void locatingbyPartialLinkText()
+{
+    WebElement text=driver.findElement(By.partialLinkText("simple-form"));
+    WebElement text1=driver.findElement(By.partialLinkText("check-box"));
+    WebElement text2=driver.findElement(By.partialLinkText("radio-button"));
+    WebElement text3=driver.findElement(By.partialLinkText("select-input"));
+    WebElement text4=driver.findElement(By.partialLinkText("ajax-form"));
+}
+//css selector
+public void tagandid()//syntax tag#id
+{
+    WebElement message=driver.findElement(By.cssSelector("input#single-input-field"));	
+}
+public void tagandclass()//syntax tag.class
+{
+	WebElement message=driver.findElement(By.cssSelector("input.form-check-input"));
+}
+public void tagandattribute()//syntax tag[attribute=value]
+{
+	WebElement message=driver.findElement(By.cssSelector("input[type=checkbox]"));
+
+}
+public void tag_classandattribute()//syntax tag.classname[attribute=value]
+{
+	WebElement message=driver.findElement(By.cssSelector("input.form-check-input[type=checkbox]"));
+}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Locaters obj=new Locaters();
