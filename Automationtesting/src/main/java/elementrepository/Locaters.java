@@ -55,21 +55,21 @@ public void tagandid()//syntax tag#id
 public void tagandclass()//syntax tag.class
 {
 	WebElement message=driver.findElement(By.cssSelector("input.form-check-input"));
-	WebElement message1=driver.findElement(By.cssSelector(""));
-	WebElement message2=driver.findElement(By.cssSelector(""));
+	WebElement message1=driver.findElement(By.cssSelector("input.btn btn-primary"));
+	WebElement message2=driver.findElement(By.cssSelector("input.form-control datepicker"));
 }
 public void tagandattribute()//syntax tag[attribute=value]
 {
 	WebElement message=driver.findElement(By.cssSelector("input[type=checkbox]"));
-	WebElement message1=driver.findElement(By.cssSelector(""));
-	WebElement message2=driver.findElement(By.cssSelector(""));
+	WebElement message1=driver.findElement(By.cssSelector("input[placeholder=Message]"));
+	WebElement message2=driver.findElement(By.cssSelector("input[value=false]"));
 
 }
 public void tag_classandattribute()//syntax tag.classname[attribute=value]
 {
 	WebElement message=driver.findElement(By.cssSelector("input.form-check-input[type=checkbox]"));
-	WebElement message1=driver.findElement(By.cssSelector(""));
-	WebElement message2=driver.findElement(By.cssSelector(""));
+	WebElement message1=driver.findElement(By.cssSelector("input.form-control[placeholder=Message]"));
+	WebElement message2=driver.findElement(By.cssSelector("input.form-control[name=daterange]"));
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
