@@ -9,11 +9,11 @@ public class Launchbrowser {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
- //WebDriver driver=new ChromeDriver();
+   WebDriver driver=new ChromeDriver();
  
  //WebDriver driver=new EdgeDriver();
 		
-		WebDriver driver=new FirefoxDriver();
+		//WebDriver driver=new FirefoxDriver();
 	}
 
 }

@@ -49,19 +49,27 @@ public void locatingbyPartialLinkText()
 public void tagandid()//syntax tag#id
 {
     WebElement message=driver.findElement(By.cssSelector("input#single-input-field"));	
+    WebElement message1=driver.findElement(By.cssSelector("button#button-one"));
+    WebElement message2=driver.findElement(By.cssSelector("input#value-a"));
 }
 public void tagandclass()//syntax tag.class
 {
 	WebElement message=driver.findElement(By.cssSelector("input.form-check-input"));
+	WebElement message1=driver.findElement(By.cssSelector(""));
+	WebElement message2=driver.findElement(By.cssSelector(""));
 }
 public void tagandattribute()//syntax tag[attribute=value]
 {
 	WebElement message=driver.findElement(By.cssSelector("input[type=checkbox]"));
+	WebElement message1=driver.findElement(By.cssSelector(""));
+	WebElement message2=driver.findElement(By.cssSelector(""));
 
 }
 public void tag_classandattribute()//syntax tag.classname[attribute=value]
 {
 	WebElement message=driver.findElement(By.cssSelector("input.form-check-input[type=checkbox]"));
+	WebElement message1=driver.findElement(By.cssSelector(""));
+	WebElement message2=driver.findElement(By.cssSelector(""));
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
